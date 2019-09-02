@@ -102,8 +102,8 @@ sub list_modules($$) {
 
 =head1 DESCRIPTION
 
-This module is a fork of L<Module::List>. It's exactly like Module::List, except
-with lower startup overhead (see benchmarks in
+This module is a fork of L<Module::List>. It's exactly like Module::List 0.004,
+except with lower startup overhead (see benchmarks in
 L<Bencher::Scenarios::ListingModules::Startup>). To accomplish this, it:
 
 =over
@@ -121,6 +121,13 @@ The problem is that IO::Dir brings in a bunch of other modules.
 C</> happens to work everywhere with current platforms anyway.
 
 =back
+
+
+=head1 FUNCTIONS
+
+=head2 list_modules
+
+Please see L<Module::List> for more documentation.
 
 
 =head1 SEE ALSO
